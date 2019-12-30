@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fyle Web Development</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- $ introduction $!!!! -->
+	<div>
+		<div>
+            <img src='Globe_Stand.png' class='setupIcon'>
+        </div>  
+			<div class='container1'>
+		    <div style="font-size:3.2em; font-weight: bold;">
+		    	Looking for a lollipop alternative?
+		    </div>
+		    <div style="font-size:1.0em;padding-top: 16px;">
+			    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy<br/> text ever since the 1500s.
+			</div>
+		    <div class="outer">
+			  <div class="inner"><button type="submit" class="button1" onClick="return false;" >Primary CTA </button></div>
+			  <div class="inner"><button type="submit" class="button2" onClick="return false;">Secondary CTA </button></div>
+			</div>
+	</div>
+	</div>
+	
+<!--$ Table part $-->
+	<div class = "headingborder"> 
+        <div class = "heading">
+        	This is a heading in <br/>two lines
+        </div> 
+    	<img src='Table.png' class="table" >
+    </div>
+	
+
+	<!--campare pricing today -->
+    <div class="text">
+    	Compare pricing today!
+    </div>
+    <div class="text1">
+    	Lorem Ipsum is simply dummy text of the printing and <span style="color: #0099ff">typesetting</span>. 
+    </div>
+
+    <!--$ Serving Boxes $-->
+    <table class="hoverTable">
+		<tr>
+			<td id = "25", onclick="selectFunc(25)">25 Serving</td>
+			<td id = "50", onclick="selectFunc(50)">50 serving</td>
+			<td id = "100", onclick="selectFunc(100)" style="border: #0099ff 2px solid;">100 serving</td>
+			<td id = "200", onclick="selectFunc(200)">200 serving</td>
+		</tr>
+	</table>
+
+	<!--$ CheckBox $-->
+	<div class="slide">
+		<span style="font-weight: bold;padding: 10px;font-size: 1.0em;">Annual</span>
+		<label class="switch">
+		  <input type="checkbox" id="myCheck" onclick="check();" autocomplete="off" checked />
+		  <span class="slider round" />
+		</label>
+		<span class="monthly" >Monthly</span>
+	</div>
+	<div style="font-size:1.0em;padding-top: 10px;">
+	<div class="Toggleoff">50% off</div>
+
+	<!--$ CardView  $-->
+	<div class="container2">
+
+		<!--$ Lollipop $-->
+		<div class="card">
+		  <div class="container">
+		    <h4 class="head1">
+		    	<b>lollipop</b>
+		    </h4> 
+		    <span class = "rate" id="lollipopRate">$100</span>
+		    <span class="permonth" id="per">  Per month </span> 
+		    <div class="for" id="for">
+		    	For 100 serving
+	 	    </div>
+		  </div>
+		</div>
+
+		<!--$ IceCandy $-->
+		<div class="card">
+		  <div class="container">
+		    <h4 class="head1">
+		    	<b>Icecandy</b>
+		    </h4> 
+		    <span class = "rate" id="icecandyRate">$200</span>
+		    <span class="permonth" id="per1">  Per month</span> 
+		    <div class="for" id="for1">
+		    	For 100 serving
+	 	    </div>
+		  </div>
+		</div>
+
+		<!--$ Your Savings with lollipop $-->
+		<div class="card" style="-ms-transform: scale(1.1);-webkit-transform: scale(1.1);transform: scale(1.1); ">
+		  <div class="container">
+		    <h4 class="head1">
+		    	<b>Your savings with lollipop</b>
+		    </h4> 
+		    <span class = "rate" style="color: #0099ff;" id="savingsRate">$100</span>
+		    <div class="permonth" style="margin-bottom: 40px;" id="per2">Per month</div> 
+		  </div>
+		</div>
+	</div>
+	
+	<!--$ Customer actions $-->
+	<div class="here">
+    	Here's what our customers have to say 
+    </div>
+
+	<!--$ Man Image with Quote of ~Raja ram $-->
+    <div class="container3">
+    	<img class="image1" src="Man.png" >
+		<blockquote>
+			<div class="text2">
+		       Lorem Ipsum is simply dummy text of the <br/>printing and typesetting industry. Lorem Ipsum <br/>has been the industry's standard dummy text <br/>ever since the 1500s.
+			    <footer style="padding-top: 15px;">
+			        <cite>
+			            <b class="name">Raja Ram</b>
+			            <div class="name">Tip world</div>
+			        </cite>
+			    </footer>
+			</div>
+	    </blockquote>
+    </div>
+
+	<!--$ Loved by users recommended by experts $-->
+    <div>
+		<div>
+            <img src='Trolly.png' class='iconDetails1'>
+        </div>  
+		<div class='container4'>
+		    <div style="font-size:1.0em; font-weight: bold;">
+		    	Loved by users, 
+				recommended by experts
+			</div>
+		    <div style="font-size:.8em;padding-top: 15px;color: #8B8E91;">
+		    	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+		    </div>
+		    <div class="outer">
+			  <div class="inner"><button type="submit" class="button1" onClick="return false;" >Primary CTA </button></div>
+			  
+			</div>
+		</div>
+	</div>
+
+	<!--$ JScript for price changes $-->
+	<script type="text/javascript">
+		var serv=100,y;
+
+		function selectFunc(x){
+			document.getElementById("25").style.border = "#D5E2E9 1px solid";
+			document.getElementById("50").style.border = "#D5E2E9 1px solid";
+			document.getElementById("100").style.border = "#D5E2E9 1px solid";
+			document.getElementById("200").style.border = "#D5E2E9 1px solid";
+			serv=x;
+			y = document.getElementById("myCheck").checked;
+			if(x==25){
+				document.getElementById("25").style.border = "#0099ff 2px solid";
+			}else if(x==50){
+				document.getElementById("50").style.border = "#0099ff 2px solid";
+			}else if(x==100){
+				document.getElementById("100").style.border = "#0099ff 2px solid";
+			}else if(x==200){
+				document.getElementById("200").style.border = "#0099ff 2px solid";
+			}
+			calc();
+		}
+		// Checking
+		function check(){
+			y = document.getElementById("myCheck").checked;
+			calc();
+		}
+		//Calculate different pricing for no of Servings by Year/Month.
+		function calc(){
+			if(y){
+				document.getElementById("lollipopRate").innerHTML = "$"+serv;
+				document.getElementById("icecandyRate").innerHTML = "$"+2*serv;
+				document.getElementById("savingsRate").innerHTML = "$"+(2*serv-serv);
+				document.getElementById("for").innerHTML = "For "+serv+" serving";
+				document.getElementById("for1").innerHTML = "For "+serv+" serving";
+				document.getElementById("per").innerHTML = "Per Month";
+				document.getElementById("per1").innerHTML = "Per Month";
+				document.getElementById("per2").innerHTML = "Per Month";
+			}else{
+				document.getElementById("lollipopRate").innerHTML = "$"+(serv/2);
+				document.getElementById("icecandyRate").innerHTML = "$"+serv;
+				document.getElementById("savingsRate").innerHTML = "$"+(serv-(serv/2));
+				document.getElementById("for").innerHTML = "For "+serv+" serving";
+				document.getElementById("for1").innerHTML = "For "+serv+" serving";
+				document.getElementById("per").innerHTML = "Per Year";
+				document.getElementById("per1").innerHTML = "Per Year";
+				document.getElementById("per2").innerHTML = "Per Year";
+			}
+		}
+	</script>
+</body>
+</html>
